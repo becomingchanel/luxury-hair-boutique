@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Luxury Hair Boutique. Learn how we collect, use, and protect your personal information.">
+    <meta name="keywords" content="privacy policy, data protection, cookies, personal information">
+    <meta name="author" content="Luxury Hair Boutique">
+    <meta name="theme-color" content="#0A0A0A">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy - Luxury Hair Boutique">
+    <meta property="og:description" content="Our commitment to protecting your privacy and personal information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/privacy.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Privacy Policy - Luxury Hair Boutique</title>
+
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES & ROOT
+           ============================================ */
+        :root {
+            --color-black: #0A0A0A;
+            --color-white: #FFFFFF;
+            --color-tan: #B5967A;
+            --color-cream: #F5F0E8;
+            --color-light-cream: #FAF7F2;
+            --color-light-gray: #E8E2D8;
+            --color-dark-gray: #5C5147;
+            --color-text: #1A1A1A;
+
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --spacing-3xl: 5rem;
+
+            --transition-fast: 0.2s ease;
+            --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+            --border-thin: 1px;
+            --border-tan: 1px solid var(--color-tan);
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 5vw, 3.5rem);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 500;
+            letter-spacing: -0.005em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+
+        /* ============================================
+           ANNOUNCEMENT BAR
+           ============================================ */
+        .announcement-bar {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            text-align: center;
+            padding: 1rem var(--spacing-sm);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 40;
+            border-bottom: 2px solid var(--color-black);
+        }
+
+        .announcement-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        nav.main-nav {
+            background-color: var(--color-white);
+            padding: 1.5rem var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all var(--transition-smooth);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--color-black);
+            text-transform: uppercase;
+        }
+
+        .nav-logo a {
+            color: var(--color-black);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--color-text);
+            position: relative;
+            text-transform: uppercase;
+            transition: color var(--transition-fast);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-tan);
+            transition: width var(--transition-fast);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-item { position: relative; }
+        .mega-menu { position: absolute; top: 100%; left: 0; background-color: #FFFFFF; border: 1px solid #E8E8E8; border-top: 2px solid #B5967A; padding: 40px; width: 900px; z-index: 200; display: none; grid-template-columns: 1fr 1fr 1fr; gap: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .nav-item:hover .mega-menu { display: grid; }
+        .mega-menu-column h4 { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; color: #0A0A0A; }
+        .mega-menu-column ul { list-style: none; margin-bottom: 25px; }
+        .mega-menu-column ul li { margin-bottom: 10px; }
+        .mega-menu-column a { color: #0A0A0A; text-decoration: none; font-size: 12px; transition: color 0.3s ease; }
+        .mega-menu-column a:hover { color: #B5967A; }
+        .mega-menu-image { position: relative; height: 100%; min-height: 250px; overflow: hidden; background: linear-gradient(135deg, #F5F0E8 0%, #E8E0D5 100%); }
+        .mega-menu-image img { width: 100%; height: 100%; object-fit: cover; }
+        .mega-menu-shop-btn { position: absolute; bottom: 20px; left: 20px; right: 20px; background-color: #B5967A; color: #FFFFFF; border: none; padding: 12px 25px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; }
+        .mega-menu-shop-btn:hover { background-color: #9E8368; }
+        @media (max-width: 1024px) { .mega-menu { display: none !important; } }
+
+        .nav-icons {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: color var(--transition-fast);
+            color: var(--color-black);
+        }
+
+        .nav-icon:hover {
+            color: var(--color-tan);
+        }
+
+        .nav-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            font-weight: 900;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background-color: currentColor;
+            transition: all var(--transition-smooth);
+        }
+
+        /* ============================================
+           PAGE HERO SECTION
+           ============================================ */
+        .page-hero {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-hero-divider {
+            width: 60px;
+            height: 2px;
+            background-color: var(--color-tan);
+            margin: var(--spacing-md) auto;
+        }
+
+        .page-hero-subtitle {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ============================================
+           POLICY CONTENT
+           ============================================ */
+        .policy-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-3xl) var(--spacing-lg);
+        }
+
+        .policy-section {
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .policy-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-black);
+        }
+
+        .policy-section p {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-dark-gray);
+        }
+
+        .policy-section ul {
+            list-style: none;
+            padding-left: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .policy-section ul li {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-dark-gray);
+            position: relative;
+            padding-left: var(--spacing-lg);
+        }
+
+        .policy-section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 6px;
+            height: 6px;
+            background-color: var(--color-tan);
+            border-radius: 50%;
+        }
+
+        .highlight-box {
+            background-color: var(--color-light-cream);
+            border-left: 4px solid var(--color-tan);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: 2px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--color-dark-gray);
+            font-style: italic;
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--color-light-gray);
+        }
+
+        /* ============================================
+           CONTACT SECTION
+           ============================================ */
+        .policy-contact {
+            background-color: var(--color-light-cream);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            margin-top: var(--spacing-3xl);
+            text-align: center;
+        }
+
+        .policy-contact h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .policy-contact p {
+            color: var(--color-dark-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-email {
+            color: var(--color-tan);
+            font-weight: 700;
+            margin-top: var(--spacing-md);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            border-top: 2px solid var(--color-tan);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-column h3 {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-tan);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-column a:hover {
+            color: var(--color-tan);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .copyright a {
+            color: rgba(255, 255, 255, 0.6);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .copyright a:hover {
+            color: var(--color-tan);
+            border-bottom-color: var(--color-tan);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--color-tan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-tan);
+            transition: all var(--transition-smooth);
+            border-radius: 2px;
+        }
+
+        .social-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .social-icon:hover {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+        }
+
+        /* ============================================
+           BACK TO TOP BUTTON
+           ============================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            border: none;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+            z-index: 50;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--color-black);
+            color: var(--color-tan);
+        }
+
+        .back-to-top svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav.main-nav {
+                padding: 1rem var(--spacing-sm);
+            }
+
+            .nav-logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-icons {
+                gap: 1rem;
+            }
+
+            .announcement-bar {
+                font-size: 0.75rem;
+                padding: 0.75rem var(--spacing-xs);
+            }
+
+            .page-hero {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+
+            .policy-content {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-bar-content">
+            <span>FREE SHIPPING ON ORDERS OVER $150 | 100% RAW HUMAN HAIR | 14-DAY RETURNS</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-logo"><a href="index.html">[BRAND NAME]</a></div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="collection.html">SHOP</a>
+                <div class="mega-menu">
+                    <div class="mega-menu-column">
+                        <h4>BUNDLES</h4>
+                        <ul>
+                            <li><a href="collection.html">Raw Wavy Bundles</a></li>
+                            <li><a href="products/raw-wavy-bundles.html">Wavy Bundle Sets</a></li>
+                            <li><a href="products/curly-bundles.html">Curly Bundle Sets</a></li>
+                            <li><a href="products/kinky-curly-bundles.html">Kinky Curly Bundles</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h4>CLOSURES</h4>
+                        <ul>
+                            <li><a href="products/4x4-lace-closure.html">4x4 Lace Closure</a></li>
+                            <li><a href="products/5x5-lace-closure.html">5x5 Lace Closure</a></li>
+                            <li><a href="collection.html">Closure Combos</a></li>
+                            <li><a href="collection.html">Closure Textures</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h4>K-TIPS</h4>
+                        <ul>
+                            <li><a href="products/ktip-wavy.html">K-Tip Wavy</a></li>
+                            <li><a href="collection.html">K-Tip Curly</a></li>
+                            <li><a href="collection.html">K-Tip Installation</a></li>
+                            <li><a href="collection.html">K-Tip Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-image">
+                        <button class="mega-menu-shop-btn">SHOP ALL</button>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html">OUR STORY</a></li>
+            <li><a href="hair-guide.html">HAIR GUIDE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="nav-icon" title="Search">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 14L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="nav-icon" title="Account">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="nav-icon" title="Cart">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 2L6 6H3C2 6 2 7 2 7V20C2 21 3 22 4 22H20C21 22 22 21 22 20V7C22 7 22 6 21 6H18L15 2" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="cart-badge">2</span>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Privacy Policy</h1>
+            <div class="page-hero-divider"></div>
+            <p class="page-hero-subtitle">Your privacy is important to us. Learn how we collect, use, and protect your personal information.</p>
+        </div>
+    </section>
+
+    <!-- POLICY CONTENT -->
+    <section class="policy-content">
+        <div class="policy-section">
+            <h2>Introduction</h2>
+            <p>Luxury Hair Boutique ("we", "us", "our", or "Company") operates the luxuryhairtboutique.com website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+            <p>We use your data to provide and improve our Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms of Service.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Information Collection and Use</h2>
+            <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+
+            <h3 style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);">Types of Data Collected</h3>
+            <ul>
+                <li><strong>Personal Data:</strong> While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). This may include:
+                    <ul style="margin-top: var(--spacing-sm); padding-left: 2rem;">
+                        <li>Email address</li>
+                        <li>First name and last name</li>
+                        <li>Phone number</li>
+                        <li>Address, State, Province, ZIP/Postal code, City</li>
+                        <li>Cookies and Usage Data</li>
+                    </ul>
+                </li>
+                <li><strong>Usage Data:</strong> We may also collect information how the Service is accessed and used ("Usage Data"). This may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages you visit, the time and date of your visit, the time spent on those pages, and other diagnostic data.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>Use of Data</h2>
+            <p>Luxury Hair Boutique uses the collected data for various purposes:</p>
+            <ul>
+                <li>To provide and maintain our Service</li>
+                <li>To notify you about changes to our Service</li>
+                <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+                <li>To provide customer support</li>
+                <li>To gather analysis or valuable information so that we can improve our Service</li>
+                <li>To monitor the usage of our Service</li>
+                <li>To detect, prevent and address technical issues and fraudulent activity</li>
+                <li>To send you promotional communications, updates, and other information related to products and services</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>Cookies Policy</h2>
+            <p>We use cookies and similar tracking technologies to track activity on our Service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
+
+            <p style="margin-top: var(--spacing-lg);">Types of cookies we use:</p>
+            <ul>
+                <li><strong>Essential Cookies:</strong> Required for basic site functionality</li>
+                <li><strong>Functional Cookies:</strong> Remember your preferences and settings</li>
+                <li><strong>Analytical Cookies:</strong> Help us understand how you use our Service</li>
+                <li><strong>Marketing Cookies:</strong> Track your activity for advertising purposes</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>Third-Party Service Providers</h2>
+            <p>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
+            <p>These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. These may include:</p>
+            <ul>
+                <li>Payment processors for handling transactions</li>
+                <li>Email service providers for communications</li>
+                <li>Analytics providers for tracking website usage</li>
+                <li>Shipping and logistics partners</li>
+                <li>Customer relationship management providers</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>Security of Data</h2>
+            <p>The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+            <p>We implement industry-standard security measures including SSL encryption, secure payment processing, and regular security audits to protect your information from unauthorized access, alteration, disclosure, or destruction.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Your Privacy Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the personal data we hold about you</li>
+                <li>Correct inaccurate or incomplete personal data</li>
+                <li>Request deletion of your personal data</li>
+                <li>Opt-out of marketing communications at any time</li>
+                <li>Request a copy of your data in a portable format</li>
+                <li>Withdraw consent for data processing</li>
+            </ul>
+            <p style="margin-top: var(--spacing-lg);">To exercise any of these rights, please contact us at privacy@luxuryhairboutique.com with your request.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Data Retention</h2>
+            <p>We will retain your Personal Data only for as long as necessary to provide you our Services and to comply with our legal obligations. Generally, we retain personal data for the duration of your customer relationship and for up to 7 years thereafter for legal and accounting purposes.</p>
+            <p>If you request deletion of your account or data, we will delete or anonymize your information within a reasonable timeframe, except where we are required to retain it for legal compliance.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>International Data Transfers</h2>
+            <p>Your information, including Personal Data, may be transferred to, stored in, and processed in countries other than your country of residence. These countries may have data protection laws that differ from those of your home country.</p>
+            <p>If you are a resident of the European Economic Area (EEA), United Kingdom, or other regions with data protection regulations, your information may be transferred internationally only with appropriate safeguards in place, such as Standard Contractual Clauses.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>GDPR and CCPA Compliance</h2>
+            <p>If you are subject to the General Data Protection Regulation (GDPR) or California Consumer Privacy Act (CCPA), we comply with all applicable requirements regarding your personal data. This includes your rights regarding data access, correction, deletion, and portability.</p>
+            <p>For GDPR inquiries, we have appointed a Data Protection Officer who can be contacted at privacy@luxuryhairboutique.com.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Children's Privacy</h2>
+            <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we become aware that a child under 13 has provided us with Personal Data, we immediately delete such information from our servers.</p>
+            <p>If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us immediately at privacy@luxuryhairboutique.com.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the bottom of this Privacy Policy.</p>
+            <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <div class="highlight-box">
+                <p><strong>Email:</strong> privacy@luxuryhairboutique.com</p>
+                <p style="margin-top: var(--spacing-sm);"><strong>Mailing Address:</strong> Luxury Hair Boutique, Customer Care Department, [Your Address], [City], [State], [ZIP Code]</p>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            Last Updated: January 2026
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="policy-contact">
+        <h2>Questions About Your Privacy?</h2>
+        <p>If you have any concerns or questions about how we handle your personal information, please don't hesitate to reach out to our privacy team.</p>
+        <p class="contact-email">privacy@luxuryhairboutique.com</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="collection.html">Shop All</a></li>
+                    <li><a href="products/raw-wavy-bundles.html">Raw Wavy Bundles</a></li>
+                    <li><a href="products/curly-bundles.html">Curly Bundles</a></li>
+                    <li><a href="products/kinky-curly-bundles.html">Kinky Curly Bundles</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li><a href="products/wavy-curly-bundles.html">Wavy/Curly Bundles</a></li>
+                    <li><a href="products/4x4-lace-closure.html">4x4 Lace Closure</a></li>
+                    <li><a href="products/5x5-lace-closure.html">5x5 Lace Closure</a></li>
+                    <li><a href="products/ktip-wavy.html">K-Tip Extensions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="hair-guide.html">Hair Guide</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2026 Luxury Hair Boutique</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <script>
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
