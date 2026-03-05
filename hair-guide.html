@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your perfect hair texture with our comprehensive Hair Guide. Learn about raw wavy, curly, kinky curly, and wavy/curly textures with expert care tips.">
+    <meta name="keywords" content="hair texture guide, raw hair extensions, hair care tips, texture comparison, hair maintenance">
+    <meta name="author" content="Luxury Hair Boutique">
+    <meta name="theme-color" content="#0A0A0A">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hair Guide - Luxury Hair Boutique">
+    <meta property="og:description" content="Find your perfect hair texture and learn expert care tips for maintaining beautiful luxury hair extensions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/hair-guide.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Hair Guide - Luxury Hair Boutique</title>
+
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES & ROOT
+           ============================================ */
+        :root {
+            --color-black: #0A0A0A;
+            --color-white: #FFFFFF;
+            --color-tan: #B5967A;
+            --color-cream: #F5F0E8;
+            --color-light-cream: #FAF7F2;
+            --color-light-gray: #E8E2D8;
+            --color-dark-gray: #5C5147;
+            --color-text: #1A1A1A;
+
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --spacing-3xl: 5rem;
+
+            --transition-fast: 0.2s ease;
+            --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+            --border-thin: 1px;
+            --border-tan: 1px solid var(--color-tan);
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 5vw, 3.5rem);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 500;
+            letter-spacing: -0.005em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .label-tan {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-tan);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+
+        /* ============================================
+           BUTTONS & LINKS
+           ============================================ */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all var(--transition-smooth);
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .btn-primary {
+            border: 2px solid var(--color-tan);
+            color: var(--color-tan);
+            background-color: transparent;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+        }
+
+        .btn-primary-solid {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            border: 2px solid var(--color-tan);
+            font-weight: 700;
+        }
+
+        .btn-primary-solid:hover:not(:disabled) {
+            background-color: var(--color-black);
+            color: var(--color-tan);
+            border-color: var(--color-tan);
+        }
+
+        .btn-secondary {
+            color: var(--color-tan);
+            font-size: 0.9rem;
+            padding: 0;
+            border: none;
+            background: none;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .btn-secondary:hover {
+            color: var(--color-black);
+        }
+
+        /* ============================================
+           ANNOUNCEMENT BAR
+           ============================================ */
+        .announcement-bar {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            text-align: center;
+            padding: 1rem var(--spacing-sm);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 40;
+            border-bottom: 2px solid var(--color-black);
+        }
+
+        .announcement-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        nav.main-nav {
+            background-color: transparent;
+            padding: 1.5rem var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all var(--transition-smooth);
+        }
+
+        nav.main-nav.scrolled {
+            background-color: var(--color-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 1rem var(--spacing-lg);
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--color-white);
+            text-transform: uppercase;
+            transition: color var(--transition-smooth);
+        }
+
+        nav.main-nav.scrolled .nav-logo {
+            color: var(--color-black);
+        }
+
+        .nav-logo a {
+            color: inherit;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--color-white);
+            position: relative;
+            text-transform: uppercase;
+            transition: color var(--transition-fast);
+        }
+
+        nav.main-nav.scrolled .nav-links a {
+            color: var(--color-text);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-tan);
+            transition: width var(--transition-fast);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-item { position: relative; }
+        .mega-menu { position: absolute; top: 100%; left: 0; background-color: #FFFFFF; border: 1px solid #E8E8E8; border-top: 2px solid #B5967A; padding: 40px; width: 900px; z-index: 200; display: none; grid-template-columns: 1fr 1fr 1fr; gap: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .nav-item:hover .mega-menu { display: grid; }
+        .mega-menu-column h4 { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; color: #0A0A0A; }
+        .mega-menu-column ul { list-style: none; margin-bottom: 25px; }
+        .mega-menu-column ul li { margin-bottom: 10px; }
+        .mega-menu-column a { color: #0A0A0A; text-decoration: none; font-size: 12px; transition: color 0.3s ease; }
+        .mega-menu-column a:hover { color: #B5967A; }
+        .mega-menu-image { position: relative; height: 100%; min-height: 250px; overflow: hidden; background: linear-gradient(135deg, #F5F0E8 0%, #E8E0D5 100%); }
+        .mega-menu-image img { width: 100%; height: 100%; object-fit: cover; }
+        .mega-menu-shop-btn { position: absolute; bottom: 20px; left: 20px; right: 20px; background-color: #B5967A; color: #FFFFFF; border: none; padding: 12px 25px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; }
+        .mega-menu-shop-btn:hover { background-color: #9E8368; }
+        @media (max-width: 1024px) { .mega-menu { display: none !important; } }
+
+        .nav-icons {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            transition: color var(--transition-fast);
+            color: var(--color-white);
+        }
+
+        nav.main-nav.scrolled .nav-icon {
+            color: var(--color-black);
+        }
+
+        .nav-icon:hover {
+            color: var(--color-tan);
+        }
+
+        .nav-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            font-weight: 900;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background-color: currentColor;
+            transition: all var(--transition-smooth);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%), url('images/hero-video.mp4');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: var(--color-white);
+            max-width: 900px;
+            padding: var(--spacing-lg);
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-label {
+            margin-bottom: var(--spacing-lg);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--color-tan);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.1;
+        }
+
+        .hero-divider {
+            width: 80px;
+            height: 2px;
+            background-color: var(--color-tan);
+            margin: var(--spacing-lg) auto;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: var(--spacing-xl);
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        /* ============================================
+           TEXTURE COMPARISON SECTION
+           ============================================ */
+        .texture-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .section-header-divider {
+            width: 60px;
+            height: 2px;
+            background-color: var(--color-tan);
+            margin: var(--spacing-md) auto 0;
+        }
+
+        .texture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .texture-card {
+            border: 2px solid var(--color-tan);
+            overflow: hidden;
+            transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+            background-color: var(--color-white);
+        }
+
+        .texture-card:hover {
+            transform: translateY(-0.75rem);
+            box-shadow: 0 15px 40px rgba(201, 168, 76, 0.15);
+        }
+
+        .texture-card-image {
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #E8E0D5 0%, #D4C4B0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(10, 10, 10, 0.3);
+            font-size: 0.8rem;
+            overflow: hidden;
+        }
+
+        .texture-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .texture-card-content {
+            padding: var(--spacing-lg);
+        }
+
+        .texture-card h3 {
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: 0.02em;
+        }
+
+        .texture-card p {
+            font-size: 0.95rem;
+            color: var(--color-dark-gray);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+
+        .texture-detail {
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .texture-detail:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .texture-detail strong {
+            color: var(--color-tan);
+            font-weight: 600;
+        }
+
+        .texture-detail span {
+            color: var(--color-dark-gray);
+            font-size: 0.95rem;
+        }
+
+        .texture-card .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* ============================================
+           FAQ SECTION
+           ============================================ */
+        .faq-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-light-cream);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--color-white);
+            border: 2px solid var(--color-tan);
+            margin-bottom: var(--spacing-lg);
+            transition: all var(--transition-smooth);
+        }
+
+        .faq-item.active {
+            box-shadow: 0 10px 30px rgba(201, 168, 76, 0.2);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-lg);
+            cursor: pointer;
+            background-color: var(--color-white);
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text);
+            transition: all var(--transition-smooth);
+        }
+
+        .faq-question:hover {
+            background-color: var(--color-light-cream);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--color-tan);
+            transition: transform var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-content {
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+            color: var(--color-dark-gray);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* ============================================
+           LENGTH GUIDE SECTION
+           ============================================ */
+        .length-guide-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-white);
+        }
+
+        .length-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .length-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .length-guide-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: center;
+        }
+
+        .length-chart {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .length-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background-color: var(--color-light-cream);
+            border-left: 4px solid var(--color-tan);
+        }
+
+        .length-number {
+            font-weight: 700;
+            color: var(--color-tan);
+            font-size: 1.1rem;
+            min-width: 60px;
+        }
+
+        .length-description {
+            font-size: 0.95rem;
+            color: var(--color-dark-gray);
+        }
+
+        .length-image {
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, #E8E0D5 0%, #D4C4B0 100%);
+            border: 2px solid var(--color-tan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(10, 10, 10, 0.3);
+            font-size: 0.85rem;
+        }
+
+        /* ============================================
+           CARE TIPS SECTION
+           ============================================ */
+        .care-tips-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+
+        .care-tips-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .care-tips-header h2 {
+            color: var(--color-tan);
+        }
+
+        .care-tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .care-tip-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--color-tan);
+            padding: var(--spacing-lg);
+            transition: transform var(--transition-smooth);
+        }
+
+        .care-tip-card:hover {
+            transform: translateY(-0.5rem);
+        }
+
+        .care-tip-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(181, 150, 122, 0.2);
+            border-radius: 2px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .care-tip-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--color-tan);
+        }
+
+        .care-tip-card h3 {
+            color: var(--color-tan);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.1rem;
+        }
+
+        .care-tip-card p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           CTA SECTION
+           ============================================ */
+        .cta-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-light-cream);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-content p {
+            margin-bottom: var(--spacing-2xl);
+            color: var(--color-dark-gray);
+            font-size: 1.05rem;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            border-top: 2px solid var(--color-tan);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-column h3 {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-tan);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-column a:hover {
+            color: var(--color-tan);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--color-tan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-tan);
+            transition: all var(--transition-smooth);
+            border-radius: 2px;
+        }
+
+        .social-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .social-icon:hover {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+        }
+
+        /* ============================================
+           BACK TO TOP BUTTON
+           ============================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            border: none;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+            z-index: 50;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--color-black);
+            color: var(--color-tan);
+        }
+
+        .back-to-top svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* ============================================
+           ANIMATIONS
+           ============================================ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            :root {
+                --spacing-2xl: 2.5rem;
+                --spacing-3xl: 3rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .texture-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .length-guide-content {
+                grid-template-columns: 1fr;
+            }
+
+            .care-tips-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --spacing-xl: 2rem;
+                --spacing-2xl: 2rem;
+                --spacing-3xl: 2rem;
+            }
+
+            nav.main-nav {
+                padding: 1rem var(--spacing-sm);
+            }
+
+            .nav-logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-icons {
+                gap: 1rem;
+            }
+
+            .announcement-bar {
+                font-size: 0.75rem;
+                padding: 0.75rem var(--spacing-xs);
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .texture-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .care-tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .length-chart {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-bar-content">
+            <span>FREE SHIPPING ON ORDERS OVER $150 | 100% RAW HUMAN HAIR | 14-DAY RETURNS</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-logo"><a href="index.html">[BRAND NAME]</a></div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="collection.html">SHOP</a>
+                <div class="mega-menu">
+                    <div class="mega-menu-column">
+                        <h4>BUNDLES</h4>
+                        <ul>
+                            <li><a href="collection.html">Raw Wavy Bundles</a></li>
+                            <li><a href="products/raw-wavy-bundles.html">Wavy Bundle Sets</a></li>
+                            <li><a href="products/curly-bundles.html">Curly Bundle Sets</a></li>
+                            <li><a href="products/kinky-curly-bundles.html">Kinky Curly Bundles</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h4>CLOSURES</h4>
+                        <ul>
+                            <li><a href="products/4x4-lace-closure.html">4x4 Lace Closure</a></li>
+                            <li><a href="products/5x5-lace-closure.html">5x5 Lace Closure</a></li>
+                            <li><a href="collection.html">Closure Combos</a></li>
+                            <li><a href="collection.html">Closure Textures</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h4>K-TIPS</h4>
+                        <ul>
+                            <li><a href="products/ktip-wavy.html">K-Tip Wavy</a></li>
+                            <li><a href="collection.html">K-Tip Curly</a></li>
+                            <li><a href="collection.html">K-Tip Installation</a></li>
+                            <li><a href="collection.html">K-Tip Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-image">
+                        <button class="mega-menu-shop-btn">SHOP ALL</button>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html">OUR STORY</a></li>
+            <li><a href="hair-guide.html">HAIR GUIDE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="nav-icon" title="Search">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 14L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="nav-icon" title="Account">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="nav-icon" title="Cart">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 2L6 6H3C2 6 2 7 2 7V20C2 21 3 22 4 22H20C21 22 22 21 22 20V7C22 7 22 6 21 6H18L15 2" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="cart-badge">2</span>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-label">HAIR CARE & TEXTURE GUIDE</div>
+            <h1>Find Your Perfect Texture</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-description">Explore our range of textures and discover which style is perfect for your natural hair. Expert tips included.</p>
+        </div>
+    </section>
+
+    <!-- TEXTURE COMPARISON SECTION -->
+    <section class="texture-section">
+        <div class="section-header">
+            <div class="label-tan">TEXTURE GUIDE</div>
+            <h2>Choose Your Texture</h2>
+            <div class="section-header-divider"></div>
+        </div>
+
+        <div class="texture-grid">
+            <div class="texture-card">
+                <div class="texture-card-image">
+                    <img src="images/model-wavy-1a.png" alt="Raw Wavy Hair Texture">
+                </div>
+                <div class="texture-card-content">
+                    <h3>Raw Wavy</h3>
+                    <p>Loose, natural-looking waves with incredible movement and versatility for styling.</p>
+                    <div class="texture-detail">
+                        <strong>Best For:</strong> <span>Versatile styling, all hair types</span>
+                    </div>
+                    <div class="texture-detail">
+                        <strong>Maintenance:</strong> <span>Easy to care for</span>
+                    </div>
+                    <a href="collection.html" class="btn btn-primary-solid">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="texture-card">
+                <div class="texture-card-image">
+                    <img src="images/model-curly-2a.png" alt="Curly Hair Texture">
+                </div>
+                <div class="texture-card-content">
+                    <h3>Curly</h3>
+                    <p>Beautiful defined curls with body and bounce. Perfect for creating glamorous waves.</p>
+                    <div class="texture-detail">
+                        <strong>Best For:</strong> <span>Defined curls and waves</span>
+                    </div>
+                    <div class="texture-detail">
+                        <strong>Maintenance:</strong> <span>Moderate care required</span>
+                    </div>
+                    <a href="collection.html" class="btn btn-primary-solid">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="texture-card">
+                <div class="texture-card-image">
+                    <img src="images/model-curly-3a.png" alt="Kinky Curly Hair Texture">
+                </div>
+                <div class="texture-card-content">
+                    <h3>Kinky Curly</h3>
+                    <p>Tight, coily texture with maximum volume and authentic natural curl pattern.</p>
+                    <div class="texture-detail">
+                        <strong>Best For:</strong> <span>Natural curl pattern match</span>
+                    </div>
+                    <div class="texture-detail">
+                        <strong>Maintenance:</strong> <span>Dedicated care needed</span>
+                    </div>
+                    <a href="collection.html" class="btn btn-primary-solid">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="texture-card">
+                <div class="texture-card-image">
+                    <img src="images/model-wavy-2a.png" alt="Wavy Curly Hair Texture">
+                </div>
+                <div class="texture-card-content">
+                    <h3>Wavy/Curly</h3>
+                    <p>Hybrid texture combining waves and curls for dynamic, multi-dimensional style.</p>
+                    <div class="texture-detail">
+                        <strong>Best For:</strong> <span>Mixed texture preference</span>
+                    </div>
+                    <div class="texture-detail">
+                        <strong>Maintenance:</strong> <span>Moderate care required</span>
+                    </div>
+                    <a href="collection.html" class="btn btn-primary-solid">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="faq-header">
+            <div class="label-tan">HOW TO CHOOSE</div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="section-header-divider"></div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Which texture matches my natural hair?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Choose a texture that closely matches your natural hair pattern. If you have wavy hair, Raw Wavy or Wavy/Curly textures work best. For curly hair, try Curly or Kinky Curly. You can always blend textures for a custom look. When in doubt, we recommend starting with Raw Wavy as it's the most versatile.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How many bundles do I need?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        The number of bundles depends on your natural hair thickness and desired fullness. Most customers use 3-4 bundles for medium fullness, or 2-3 for lighter coverage. Thicker hair textures like Kinky Curly may require 4-5 bundles. We recommend consulting with a professional stylist for personalized advice based on your hair type and styling goals.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What length should I get?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Choose a length that complements your face shape and personal style. Popular lengths range from 12 to 30 inches. Shorter lengths (12-18 inches) offer easy styling and quicker installation. Longer lengths (20-30 inches) provide more versatility and dramatic impact. Consider your natural hair length and how much volume you want to add for a seamless blend.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I care for raw hair?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Raw hair requires gentle care to maintain its quality. Wash with sulfate-free shampoo in cool water, deep condition regularly, and use heat protectant spray before styling. Avoid rubbing hair vigorously when wet. Braid or put hair in protective styles when sleeping. Minimize heat styling and always use low heat settings. Avoid chlorine and salt water. Proper care ensures your extensions last 2-5+ years.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I dye or color my extensions?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Raw hair can be dyed, but we recommend having a professional colorist handle this process. Raw hair accepts color well, but improper application can damage the hair. Use high-quality, sulfate-free dyes and follow up with deep conditioning treatments. Color services may affect the longevity of your extensions, so plan accordingly.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does a set last?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        With proper care and maintenance, Luxury Hair Boutique extensions last 2-5+ years. The lifespan depends on how frequently you wear them, installation method, and your hair care routine. Regular deep conditioning, protective styling, and gentle handling extend the life of your extensions. Professional installation and maintenance appointments also help preserve quality.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LENGTH GUIDE SECTION -->
+    <section class="length-guide-section">
+        <div class="length-header">
+            <div class="label-tan">LENGTH GUIDE</div>
+            <h2>Finding Your Perfect Length</h2>
+            <div class="section-header-divider"></div>
+        </div>
+
+        <div class="length-guide-content">
+            <div class="length-chart">
+                <div class="length-item">
+                    <div class="length-number">12"</div>
+                    <div class="length-description">Shoulder length. Great for quick installation and easy styling.</div>
+                </div>
+                <div class="length-item">
+                    <div class="length-number">16"</div>
+                    <div class="length-description">Mid-back. The most popular choice for balanced length and volume.</div>
+                </div>
+                <div class="length-item">
+                    <div class="length-number">20"</div>
+                    <div class="length-description">Long and luxurious. Perfect for dramatic transformations.</div>
+                </div>
+                <div class="length-item">
+                    <div class="length-number">24"</div>
+                    <div class="length-description">Extra long. Maximum versatility for styling and blending.</div>
+                </div>
+                <div class="length-item">
+                    <div class="length-number">28-30"</div>
+                    <div class="length-description">Floor-length luxury. Ultimate statement-making length.</div>
+                </div>
+            </div>
+
+            <div class="length-image">
+                Model image showing length reference
+            </div>
+        </div>
+    </section>
+
+    <!-- CARE TIPS SECTION -->
+    <section class="care-tips-section">
+        <div class="care-tips-header">
+            <h2>Hair Care Tips</h2>
+        </div>
+
+        <div class="care-tips-grid">
+            <div class="care-tip-card">
+                <div class="care-tip-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Washing</h3>
+                <p>Use cool water and sulfate-free shampoo. Wash gently with downward strokes. Avoid twisting or wringing. Rinse thoroughly until water runs clear.</p>
+            </div>
+
+            <div class="care-tip-card">
+                <div class="care-tip-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 9 8.5 9 7 9.67 7 10.5 7.67 12 8.5 12z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Styling</h3>
+                <p>Use low heat when possible. Always apply heat protectant spray first. Allow hair to air dry partially before styling. Avoid excessive straightening or curling.</p>
+            </div>
+
+            <div class="care-tip-card">
+                <div class="care-tip-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Sleeping</h3>
+                <p>Braid your hair before bed to prevent tangling. Use a silk or satin pillowcase to reduce friction. Keep hair moisturized with leave-in conditioner at night.</p>
+            </div>
+
+            <div class="care-tip-card">
+                <div class="care-tip-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Swimming</h3>
+                <p>Wet hair with clean water before entering pool or ocean to prevent chemical absorption. Rinse immediately afterward. Apply deep conditioner the same day to restore moisture.</p>
+            </div>
+
+            <div class="care-tip-card">
+                <div class="care-tip-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h10v2H7z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Conditioning</h3>
+                <p>Deep condition weekly to maintain moisture and shine. Focus on mid-lengths and ends. Leave deep conditioning mask on for 15-30 minutes for best results.</p>
+            </div>
+
+            <div class="care-tip-card">
+                <div class="care-tip-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l20-2V4c0-1.1-.9-2-2-2zm-2 12h-5v5h-2v-5H6v-2h5V7h2v5h5v2z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Storage</h3>
+                <p>Store extensions in a cool, dry place when not wearing. Use a wig stand or hang them to prevent tangling. Keep away from direct sunlight and heat sources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Find Your Perfect Match?</h2>
+            <p>Browse our complete collection of textures and discover the luxury hair extensions that will transform your look.</p>
+            <a href="collection.html" class="btn btn-primary-solid">SHOP TEXTURES</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="collection.html">Shop All</a></li>
+                    <li><a href="products/raw-wavy-bundles.html">Raw Wavy Bundles</a></li>
+                    <li><a href="products/curly-bundles.html">Curly Bundles</a></li>
+                    <li><a href="products/kinky-curly-bundles.html">Kinky Curly Bundles</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li><a href="products/wavy-curly-bundles.html">Wavy/Curly Bundles</a></li>
+                    <li><a href="products/4x4-lace-closure.html">4x4 Lace Closure</a></li>
+                    <li><a href="products/5x5-lace-closure.html">5x5 Lace Closure</a></li>
+                    <li><a href="products/ktip-wavy.html">K-Tip Extensions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="hair-guide.html">Hair Guide</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2026 Luxury Hair Boutique</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <script>
+        // Navigation scroll effect
+        const mainNav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                mainNav.classList.add('scrolled');
+            } else {
+                mainNav.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

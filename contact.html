@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Luxury Hair Boutique. Reach our customer support team for questions about our premium raw hair extensions and services.">
+    <meta name="keywords" content="contact, customer support, hair extensions help, luxury boutique">
+    <meta name="author" content="Luxury Hair Boutique">
+    <meta name="theme-color" content="#0A0A0A">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us - Luxury Hair Boutique">
+    <meta property="og:description" content="Get in touch with our customer support team. We're here to help with any questions about our luxury hair extensions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/contact.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Contact Us - Luxury Hair Boutique</title>
+
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES & ROOT
+           ============================================ */
+        :root {
+            --color-black: #0A0A0A;
+            --color-white: #FFFFFF;
+            --color-tan: #B5967A;
+            --color-cream: #F5F0E8;
+            --color-light-cream: #FAF7F2;
+            --color-light-gray: #E8E2D8;
+            --color-dark-gray: #5C5147;
+            --color-text: #1A1A1A;
+
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --spacing-3xl: 5rem;
+
+            --transition-fast: 0.2s ease;
+            --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+            --border-thin: 1px;
+            --border-tan: 1px solid var(--color-tan);
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 5vw, 3.5rem);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 500;
+            letter-spacing: -0.005em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .label-tan {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-tan);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+
+        /* ============================================
+           BUTTONS & LINKS
+           ============================================ */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all var(--transition-smooth);
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .btn-primary {
+            border: 2px solid var(--color-tan);
+            color: var(--color-tan);
+            background-color: transparent;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+        }
+
+        .btn-primary-solid {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            border: 2px solid var(--color-tan);
+            font-weight: 700;
+        }
+
+        .btn-primary-solid:hover:not(:disabled) {
+            background-color: var(--color-black);
+            color: var(--color-tan);
+            border-color: var(--color-tan);
+        }
+
+        /* ============================================
+           ANNOUNCEMENT BAR
+           ============================================ */
+        .announcement-bar {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            text-align: center;
+            padding: 1rem var(--spacing-sm);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 40;
+            border-bottom: 2px solid var(--color-black);
+        }
+
+        .announcement-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        nav.main-nav {
+            background-color: transparent;
+            padding: 1.5rem var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all var(--transition-smooth);
+        }
+
+        nav.main-nav.scrolled {
+            background-color: var(--color-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 1rem var(--spacing-lg);
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--color-white);
+            text-transform: uppercase;
+            transition: color var(--transition-smooth);
+        }
+
+        nav.main-nav.scrolled .nav-logo {
+            color: var(--color-black);
+        }
+
+        .nav-logo a {
+            color: inherit;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--color-white);
+            position: relative;
+            text-transform: uppercase;
+            transition: color var(--transition-fast);
+        }
+
+        nav.main-nav.scrolled .nav-links a {
+            color: var(--color-text);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-tan);
+            transition: width var(--transition-fast);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-item { position: relative; }
+        .mega-menu { position: absolute; top: 100%; left: 0; background-color: #FFFFFF; border: 1px solid #E8E8E8; border-top: 2px solid #B5967A; padding: 40px; width: 900px; z-index: 200; display: none; grid-template-columns: 1fr 1fr 1fr; gap: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .nav-item:hover .mega-menu { display: grid; }
+        .mega-menu-column h4 { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; color: #0A0A0A; }
+        .mega-menu-column ul { list-style: none; margin-bottom: 25px; }
+        .mega-menu-column ul li { margin-bottom: 10px; }
+        .mega-menu-column a { color: #0A0A0A; text-decoration: none; font-size: 12px; transition: color 0.3s ease; }
+        .mega-menu-column a:hover { color: #B5967A; }
+        .mega-menu-image { position: relative; height: 100%; min-height: 250px; overflow: hidden; background: linear-gradient(135deg, #F5F0E8 0%, #E8E0D5 100%); }
+        .mega-menu-image img { width: 100%; height: 100%; object-fit: cover; }
+        .mega-menu-shop-btn { position: absolute; bottom: 20px; left: 20px; right: 20px; background-color: #B5967A; color: #FFFFFF; border: none; padding: 12px 25px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; }
+        .mega-menu-shop-btn:hover { background-color: #9E8368; }
+        @media (max-width: 1024px) { .mega-menu { display: none !important; } }
+
+        .nav-icons {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            transition: color var(--transition-fast);
+            color: var(--color-white);
+        }
+
+        nav.main-nav.scrolled .nav-icon {
+            color: var(--color-black);
+        }
+
+        .nav-icon:hover {
+            color: var(--color-tan);
+        }
+
+        .nav-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            font-weight: 900;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background-color: currentColor;
+            transition: all var(--transition-smooth);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%);
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: var(--color-white);
+            max-width: 900px;
+            padding: var(--spacing-lg);
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-label {
+            margin-bottom: var(--spacing-lg);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--color-tan);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.1;
+        }
+
+        .hero-divider {
+            width: 80px;
+            height: 2px;
+            background-color: var(--color-tan);
+            margin: var(--spacing-lg) auto;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        /* ============================================
+           CONTACT FORM SECTION
+           ============================================ */
+        .contact-form-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-white);
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .form-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-header-divider {
+            width: 60px;
+            height: 2px;
+            background-color: var(--color-tan);
+            margin: var(--spacing-md) auto 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-tan);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 1rem var(--spacing-md);
+            border: 2px solid var(--color-light-gray);
+            background-color: var(--color-white);
+            color: var(--color-text);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            border-radius: 2px;
+            transition: border-color var(--transition-smooth);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--color-dark-gray);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--color-tan);
+            box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+            font-family: var(--font-sans);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .form-submit {
+            align-self: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        /* ============================================
+           CONTACT INFO SECTION
+           ============================================ */
+        .contact-info-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-light-cream);
+        }
+
+        .contact-info-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background-color: var(--color-white);
+            border: 2px solid var(--color-tan);
+            padding: var(--spacing-lg);
+            text-align: center;
+            transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-0.75rem);
+            box-shadow: 0 15px 40px rgba(201, 168, 76, 0.15);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-md);
+            background-color: rgba(181, 150, 122, 0.1);
+            border-radius: 2px;
+        }
+
+        .contact-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--color-tan);
+        }
+
+        .contact-card h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-tan);
+        }
+
+        .contact-card p {
+            color: var(--color-dark-gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .contact-detail {
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* ============================================
+           FAQ SECTION
+           ============================================ */
+        .faq-section {
+            padding: var(--spacing-3xl) var(--spacing-lg);
+            background-color: var(--color-white);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--color-light-cream);
+            border: 2px solid var(--color-tan);
+            margin-bottom: var(--spacing-lg);
+            transition: all var(--transition-smooth);
+        }
+
+        .faq-item.active {
+            box-shadow: 0 10px 30px rgba(201, 168, 76, 0.2);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-lg);
+            cursor: pointer;
+            background-color: var(--color-light-cream);
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text);
+            transition: all var(--transition-smooth);
+        }
+
+        .faq-question:hover {
+            background-color: var(--color-white);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--color-tan);
+            transition: transform var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-content {
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+            color: var(--color-dark-gray);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            background-color: var(--color-white);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            border-top: 2px solid var(--color-tan);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-column h3 {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-tan);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-column a:hover {
+            color: var(--color-tan);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--color-tan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-tan);
+            transition: all var(--transition-smooth);
+            border-radius: 2px;
+        }
+
+        .social-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .social-icon:hover {
+            background-color: var(--color-tan);
+            color: var(--color-black);
+        }
+
+        /* ============================================
+           BACK TO TOP BUTTON
+           ============================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-tan);
+            color: var(--color-black);
+            border: none;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+            z-index: 50;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--color-black);
+            color: var(--color-tan);
+        }
+
+        .back-to-top svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* ============================================
+           ANIMATIONS
+           ============================================ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            :root {
+                --spacing-2xl: 2.5rem;
+                --spacing-3xl: 3rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --spacing-xl: 2rem;
+                --spacing-2xl: 2rem;
+                --spacing-3xl: 2rem;
+            }
+
+            nav.main-nav {
+                padding: 1rem var(--spacing-sm);
+            }
+
+            .nav-logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-icons {
+                gap: 1rem;
+            }
+
+            .announcement-bar {
+                font-size: 0.75rem;
+                padding: 0.75rem var(--spacing-xs);
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .contact-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-container {
+                padding: 0;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .form-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-bar-content">
+            <span>FREE SHIPPING ON ORDERS OVER $150 | 100% RAW HUMAN HAIR | 14-DAY RETURNS</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-logo"><a href="index.html">[BRAND NAME]</a></div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="collection.html">SHOP</a>
+                <div class="mega-menu">
+                    <div class="mega-menu-column">
+                        <h4>BUNDLES</h4>
+                        <ul>
+                            <li><a href="collection.html">Raw Wavy Bundles</a></li>
+                            <li><a href="products/raw-wavy-bundles.html">Wavy Bundle Sets</a></li>
+                            <li><a href="products/curly-bundles.html">Curly Bundle Sets</a></li>
+                            <li><a href="products/kinky-curly-bundles.html">Kinky Curly Bundles</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h4>CLOSURES</h4>
+                        <ul>
+                            <li><a href="products/4x4-lace-closure.html">4x4 Lace Closure</a></li>
+                            <li><a href="products/5x5-lace-closure.html">5x5 Lace Closure</a></li>
+                            <li><a href="collection.html">Closure Combos</a></li>
+                            <li><a href="collection.html">Closure Textures</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h4>K-TIPS</h4>
+                        <ul>
+                            <li><a href="products/ktip-wavy.html">K-Tip Wavy</a></li>
+                            <li><a href="collection.html">K-Tip Curly</a></li>
+                            <li><a href="collection.html">K-Tip Installation</a></li>
+                            <li><a href="collection.html">K-Tip Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-image">
+                        <button class="mega-menu-shop-btn">SHOP ALL</button>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html">OUR STORY</a></li>
+            <li><a href="hair-guide.html">HAIR GUIDE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="nav-icon" title="Search">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 14L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="nav-icon" title="Account">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="nav-icon" title="Cart">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 2L6 6H3C2 6 2 7 2 7V20C2 21 3 22 4 22H20C21 22 22 21 22 20V7C22 7 22 6 21 6H18L15 2" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="cart-badge">2</span>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-label">CUSTOMER SUPPORT</div>
+            <h1>Get In Touch</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-description">Have questions about our luxury hair extensions? Our team is here to help and respond within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-form-section">
+        <div class="contact-container">
+            <div class="form-header">
+                <div class="label-tan">SEND US A MESSAGE</div>
+                <h2>We're Here to Help</h2>
+                <div class="form-header-divider"></div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="order">Order Question</option>
+                        <option value="product">Product Information</option>
+                        <option value="installation">Installation Help</option>
+                        <option value="care">Hair Care Advice</option>
+                        <option value="returns">Returns & Exchanges</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary-solid">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO SECTION -->
+    <section class="contact-info-section">
+        <div class="contact-info-header">
+            <div class="label-tan">REACH OUT</div>
+            <h2>Multiple Ways to Connect</h2>
+            <div class="form-header-divider"></div>
+        </div>
+
+        <div class="contact-info-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Email</h3>
+                <p>Have a question? Send us an email and we'll respond within 24 hours.</p>
+                <div class="contact-detail">support@yourdomain.com</div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 5V1h-1v4H8.01V1H7v4H3.99V1h-1v4H1v2h22V5h-2V1h-1v4h-3.01V1h-1v4H11.99zm8.93 5H1.04V19c0 1.1.89 2 1.99 2h14l4-4V10.99z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Hours</h3>
+                <p>Our team is available to assist you during business hours.</p>
+                <div class="contact-detail">Mon-Fri 9AM-6PM EST</div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.07 4.93L17.65 3.5C16.5 2.35 14.75 2.35 13.6 3.5L12.18 4.93c1.18 1.18 1.18 3.07 0 4.25l1.41 1.41c1.18-1.18 3.07-1.18 4.25 0l1.41-1.41c1.15-1.15 1.15-2.9.02-4.03zM3.5 13.6l4.25-4.25-1.41-1.41-4.25 4.25c-1.15 1.15-1.15 2.9 0 4.05l1.41 1.41z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Response Time</h3>
+                <p>We prioritize your inquiries and aim for quick responses.</p>
+                <div class="contact-detail">Within 24 Hours</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="faq-header">
+            <div class="label-tan">COMMON QUESTIONS</div>
+            <h2>Customer FAQ</h2>
+            <div class="form-header-divider"></div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is your shipping policy?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We ship all orders within 1-2 business days. Orders are carefully packaged and shipped via tracked mail. Free shipping is available on orders over $150. International shipping is available for select locations. Tracking information will be sent to your email upon shipment.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is your return policy?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We offer a 14-day return guarantee on all purchases. Returns must be initiated within 14 days of delivery and the hair must be in unworn, uninstalled condition. Once received and inspected, refunds are processed within 5-7 business days. Exchanges can be processed faster if you'd like to try a different texture or length.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I install the hair extensions?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We recommend professional installation for the best results. If you'd like to install them yourself, we provide detailed instructions with every order. We also offer virtual consultations and can recommend trusted stylists in your area. Proper installation ensures your extensions last longer and blend seamlessly with your natural hair.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I customize my order?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Absolutely! We offer custom bundle combinations, custom lengths, and can help match specific color requests. Bulk orders and wholesale inquiries are available. For customizations, please reach out directly through our contact form or email, and our team will work with you to create your perfect order.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer wholesale or partnership opportunities?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Yes, we welcome inquiries from salons, stylists, and retailers. We offer competitive wholesale pricing for bulk orders. For partnership details, commission structures, and exclusive wholesale benefits, please select "Partnership Opportunity" in the contact form and we'll be in touch with our wholesale team.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are your extensions ethically sourced?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Yes, ethical sourcing is central to our brand mission. All our hair comes from willing donors in Southeast Asia through direct partnerships with suppliers who follow fair trade practices. We ensure all donors are compensated fairly and that sourcing practices support communities. Learn more about our sourcing practices on our About page.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="collection.html">Shop All</a></li>
+                    <li><a href="products/raw-wavy-bundles.html">Raw Wavy Bundles</a></li>
+                    <li><a href="products/curly-bundles.html">Curly Bundles</a></li>
+                    <li><a href="products/kinky-curly-bundles.html">Kinky Curly Bundles</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li><a href="products/wavy-curly-bundles.html">Wavy/Curly Bundles</a></li>
+                    <li><a href="products/4x4-lace-closure.html">4x4 Lace Closure</a></li>
+                    <li><a href="products/5x5-lace-closure.html">5x5 Lace Closure</a></li>
+                    <li><a href="products/ktip-wavy.html">K-Tip Extensions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="hair-guide.html">Hair Guide</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2026 Luxury Hair Boutique</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <script>
+        // Navigation scroll effect
+        const mainNav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                mainNav.classList.add('scrolled');
+            } else {
+                mainNav.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission handler (doesn't actually submit, just for styling)
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! We will respond within 24 hours.');
+                contactForm.reset();
+            });
+        }
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
